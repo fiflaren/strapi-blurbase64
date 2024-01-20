@@ -1,7 +1,7 @@
 'use strict';
 
-const blurhash = require('./blurhash');
+const blurBase64 = require('./blurbase64');
 
 module.exports = {
-  blurhash,
+  blurBase64,
 };

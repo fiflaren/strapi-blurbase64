@@ -1,13 +1,13 @@
-# Strapi plugin strapi-blurhash
+# Strapi plugin strapi-blurbase64
 
-A plugin for <a href="https://github.com/strapi/strapi">Strapi CMS</a> that generates blurhash for your uploaded images
+A plugin for <a href="https://github.com/strapi/strapi">Strapi CMS</a> that generates blur base 64 for your uploaded images
 
 ## Installation
 
 To install, run:
 
 ```bash
-npm install strapi-blurhash
+npm install strapi-blurbase64
 ```
 
 Open/create file `config/plugins.js`. Enable this plugin by adding:
@@ -15,7 +15,7 @@ Open/create file `config/plugins.js`. Enable this plugin by adding:
 ```js
 module.exports = {
     ...
-    'strapi-blurhash': {
+    'strapi-blurbase64': {
       enabled: true,
       config: {
         regenerateOnUpdate: true
@@ -24,11 +24,11 @@ module.exports = {
   }
 ```
 
-## How to generate blurhash for an image
+## How to generate blurbase64 for an image
 
 In the Strapi Dashboard open Content Manager. Edit one collection/single type. Add or edit a Media field type and save the collection/single type.
 
-## How to get blurhash
+## How to get blurbase64
 
 Target a Strapi REST API endpoint. For example:
 
@@ -36,7 +36,7 @@ Target a Strapi REST API endpoint. For example:
 localhost:1337/api/products?populate=Image.*
 ```
 
-The response will be a JSON containing blurhash along with rest of the image data:
+The response will be a JSON containing blurbase64 along with rest of the image data:
 
 ```js
 {
@@ -69,7 +69,7 @@ The response will be a JSON containing blurhash along with rest of the image dat
               "provider_metadata": null,
               "createdAt": "2022-10-28T09:42:02.471Z",
               "updatedAt": "2022-10-28T09:42:02.471Z",
-              "blurhash": "U{Nd,T?bof?u_Nxuj[x[objZayoe_Mxuj[x["
+              "blurbase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..."
             }
           }
         }

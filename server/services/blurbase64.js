@@ -3,9 +3,9 @@
 const { getPlaiceholder } = require('plaiceholder');
 
 module.exports = ({ strapi }) => ({
-  async generateBlurhash(url) {
+  async generateBlurBase64(url) {
     try {
-      return (await getPlaiceholder(url)).blurhash.hash;
+      return (await getPlaiceholder(url)).base64;
     } catch (e) {
       strapi.log.error(e);
       return null;
