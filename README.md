@@ -1,5 +1,8 @@
 # Strapi plugin strapi-blurbase64
 
+### This is a fork of https://github.com/emil-petras/strapi-blurhash, thanks to Emil Petraš, the author of the original package, for their work
+
+
 A plugin for <a href="https://github.com/strapi/strapi">Strapi CMS</a> that generates blur base 64 for your uploaded images
 
 ## Installation
